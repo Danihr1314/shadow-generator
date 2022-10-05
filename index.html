@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="col">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="left">
+        <label>Horizontal offset</label>
+        <p class="hoffset-value"></p>
+        <input id="h-offset" type="range" min="-100" max="100">
+        <label>Vertical offset</label>
+        <p class="voffset-value"></p>
+        <input id="v-offset" type="range" min="-100" max="100">
+        <label>Blur radius</label>
+        <p class="blradius-value"></p>
+        <input id="blur-rad" type="range" min="0" max="100">
+        <label>Spread radius</label>
+        <p class="spradius-value"></p>
+        <input id="spread-rad" type="range" min="-100" max="100">
+        <label>Color</label>
+        <input id="shadow-color" type="text">
+      </div>
+      <div class="principal">
+        <div class="square"></div>
+      </div>
+      <div class="rigth">
+        <label>Background color</label>
+        <input id="bck-color" type="text">
+        <label>Width</label>
+        <p class="width-value"></p>
+        <input id="sqr-width" type="range" min="0" max="20">
+        <label>Heigth</label>
+        <p class="heigth-value"></p>
+        <input id="sqr-heigth" type="range" min="0" max="40">
+        <label>Border radius</label>
+        <p class="radius-value"></p>
+        <input id="border-rad" type="range" min="0" max="40">
+        <div class="css-code"></div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script> 
+</html>
