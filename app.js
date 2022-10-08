@@ -1,4 +1,3 @@
-// range
 const xOffset = document.querySelector('.hoffset-value');
 const rangeXOffset = document.getElementById('h-offset');
 
@@ -25,8 +24,6 @@ const rangeRadius = document.getElementById('border-rad');
 const backgroundColor = document.getElementById('bck-color');
 const shadowColor = document.getElementById('shadow-color');
 
-const data = undefined;
-
 rangeWidth.addEventListener('input', (e)=>{
   width.innerHTML = e.target.value;
   element.style.width = `${e.target.value}rem`
@@ -46,3 +43,26 @@ backgroundColor.addEventListener('input', (e)=>{
   element.style.backgroundColor = e.target.value;
 })
 
+rangeXOffset.addEventListener('input', (e)=>{
+  xOffset.innerHTML = e.target.value;
+  element.style.boxShadow = `${e.target.value}px 30px 30px 30px #adadad`
+})
+
+rangeYOffset.addEventListener('input', (e)=>{
+  yOffset.innerHTML = e.target.value;
+  element.style.boxShadow = `30px ${e.target.value}px 30px 30px #adadad`
+})
+
+rangeBlur.addEventListener('input', (e)=>{
+  blur.innerHTML = e.target.value;
+  element.style.boxShadow = `30px 30px ${e.target.value}px 30px #adadad`
+})
+
+rangeSpread.addEventListener('input', (e)=>{
+  spread.innerHTML = e.target.value;
+  element.style.boxShadow = `30px 30px 30px ${e.target.value}px #adadad`
+})
+
+shadowColor.addEventListener('input', (e)=>{
+  element.style.boxShadow = `30px 30px 30px 30px ${e.target.value}`;
+})
